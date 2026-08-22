@@ -1,4 +1,6 @@
-﻿const path = require('path');
+﻿const dns = require("dns");
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
+const path = require('path');
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
