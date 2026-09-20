@@ -2,7 +2,6 @@
 import { Link } from 'react-router-dom';
 import {
   UtensilsCrossed,
-  Heart,
   Phone,
   Mail,
   MapPin,
@@ -83,18 +82,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold text-sm mb-4 tracking-wide uppercase">Quick Links</h4>
             <ul className="space-y-2.5 text-sm">
-              <li>
-                <Link to="/" className="hover:text-orange-400 transition-colors">Home</Link>
-              </li>
-              <li>
-                <Link to="/menu" className="hover:text-orange-400 transition-colors">Explore Full Menu</Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-orange-400 transition-colors">Contact & Support</Link>
-              </li>
-              <li>
-                <Link to="/orders" className="hover:text-orange-400 transition-colors">Track Orders</Link>
-              </li>
+              <li><Link to="/" className="hover:text-orange-400 transition-colors">Home</Link></li>
+              <li><Link to="/menu" className="hover:text-orange-400 transition-colors">Explore Full Menu</Link></li>
+              <li><Link to="/contact" className="hover:text-orange-400 transition-colors">Contact & Support</Link></li>
+              <li><Link to="/orders" className="hover:text-orange-400 transition-colors">Track Orders</Link></li>
             </ul>
           </div>
 
@@ -102,18 +93,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold text-sm mb-4 tracking-wide uppercase">Popular Food</h4>
             <ul className="space-y-2.5 text-sm">
-              <li>
-                <Link to="/menu?category=artisan-pizzas" className="hover:text-orange-400 transition-colors">Artisan Pizzas</Link>
-              </li>
-              <li>
-                <Link to="/menu?category=gourmet-burgers" className="hover:text-orange-400 transition-colors">Gourmet Smash Burgers</Link>
-              </li>
-              <li>
-                <Link to="/menu?category=biryani-kebabs" className="hover:text-orange-400 transition-colors">Hyderabadi Dum Biryani</Link>
-              </li>
-              <li>
-                <Link to="/menu?category=desserts-shakes" className="hover:text-orange-400 transition-colors">Lava Cakes & Shakes</Link>
-              </li>
+              <li><Link to="/menu?category=artisan-pizzas" className="hover:text-orange-400 transition-colors">Artisan Pizzas</Link></li>
+              <li><Link to="/menu?category=gourmet-burgers" className="hover:text-orange-400 transition-colors">Gourmet Smash Burgers</Link></li>
+              <li><Link to="/menu?category=biryani-kebabs" className="hover:text-orange-400 transition-colors">Hyderabadi Dum Biryani</Link></li>
+              <li><Link to="/menu?category=desserts-shakes" className="hover:text-orange-400 transition-colors">Lava Cakes & Shakes</Link></li>
             </ul>
           </div>
 
@@ -144,11 +127,6 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} FoodieXpress Inc. All rights reserved.</p>
-          <div className="flex items-center gap-1">
-            <span>Built with full-stack MERN for learning</span>
-            <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 inline" />
-            <span>CSE Engineering Project</span>
-          </div>
         </div>
       </div>
     </footer>
