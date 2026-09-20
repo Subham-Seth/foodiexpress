@@ -219,3 +219,5 @@ foodiexpress/
 ---
 
 © FoodieXpress — Built with full-stack MERN for learning.
+
+<!-- Vercel deployment sync -->
